@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FunTimesInBASIC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--STYLESHEETS-->
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!--Calendar-->
+<link href='./theme/vendors/fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='./theme/vendors/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='./theme/vendors/month-picker/MonthPicker.css' rel='stylesheet' />
+
+<!--Datatables-->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/u/bs/dt-1.10.12,se-1.2.0/datatables.min.css" />
+
+<!--Theme-->
+<link href="./theme/css/styles.css" rel="stylesheet">
+<link href="./theme/css/buttons.css" rel="stylesheet">
+<link href="./theme/css/forms.css" rel="stylesheet">
+<link href="./css/customFeatures.css" rel="stylesheet">
+<link href="./css/customTables.css" rel="stylesheet">
+
+<!--Auxiliary boostrap plugins-->
+<link href="./theme/vendors/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+<link href="./theme/vendors/select/bootstrap-select.min.css" rel="stylesheet">
+<link href="./theme/vendors/tags/css/bootstrap-tags.css" rel="stylesheet">
+<link href="./theme/vendors/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+<link href="./theme/vendors/tablesaw/tablesaw.css" rel="stylesheet">
+
+<!-- jQuery UI -->
+<link href="./theme/vendors/jqueryui/jquery-ui.min.css" rel="stylesheet" media="screen">
+<link href="./theme/vendors/jqueryui/jquery-ui.structure.min.css" rel="stylesheet" media="screen">
+<link href="./theme/vendors/jqueryui/jquery-ui.theme.min.css" rel="stylesheet" media="screen">
+
+<!--font awesome-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Angular Material style sheet -->
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
+<!--Auxiliary Angular-->
+<link href="./theme/vendors/colorpicker/colorpicker.min.css" rel="stylesheet">
+
+<!--Trees-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet">    
+
+    <!--SCRIPTS-->
+<!--Moment-->
+<script src='./theme/vendors/fullcalendar/lib/moment.min.js'></script>
+
+<!--Jquery-->
+<script src='./theme/vendors/fullcalendar/lib/jquery.min.js'></script>
+
+<!--Bootstrap-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--Jquery UI-->
+<script src="./theme/vendors/jqueryui/jquery-ui.min.js"></script>
+<script src="./theme/vendors/month-picker/MonthPicker.js"></script>
+
+<!--Full calendar-->
+<script src='./theme/vendors/fullcalendar/fullcalendar.min.js'></script>
+
+<!--Datatables-->
+<script type="text/javascript" src="https://cdn.datatables.net/u/bs/dt-1.10.12,se-1.2.0/datatables.min.js"></script>
+
+<!--Auxiliary Bootstrap-->
+<script src="./theme/vendors/form-helpers/js/bootstrap-formhelpers.min.js"></script>
+<script src="./theme/vendors/select/bootstrap-select.min.js"></script>
+<script src="./theme/vendors/tags/js/bootstrap-tags.min.js"></script>
+<script src="./theme/vendors/bootstrap-toolkit/bootstrap-toolkit.js"></script>
+<script src="./theme/vendors/tablesaw/tablesaw.js"></script>
+<script src="./theme/vendors/tablesaw/tablesaw-init.js"></script>
+
+<!--Angular JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+<!--Auxiliary Angular-->
+<script src="./theme/vendors/colorpicker/bootstrap-colorpicker-module.min.js"></script>
+
+<!--Theme-->
+<script src="./theme/js/custom.js"></script>
+<script src="./theme/js/tables.js"></script>
+
+<!--Promises-->
+<script src="http://cdn.jsdelivr.net/bluebird/3.3.5/bluebird.js"></script>
+
+<!--Trees-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+
+<!--Password test-->
+<script src="./theme/vendors/owasp-password/owasp-password-strength-test.js"></script>
+
+<!--Logic: General-->
+<script src="./js/logic/utilities.js"></script>
+
+<!--Logic: Structures-->
+<script src="./js/logic/structures/exceptions.js"></script>
+<script src="./js/logic/structures/structures.js"></script>
+<script src="./js/logic/structures/tree.js"></script>
+
+<!--Logic: Grammar-->
+<script src="./js/logic/grammar/exceptions.js"></script>
+<script src="./js/logic/grammar/grammar.js"></script>
+<script src="./js/logic/grammar/symbol.js"></script>
+<script src="./js/logic/grammar/terminal.js"></script>
+<script src="./js/logic/grammar/nonterminal.js"></script>
+
+<!--Logic: Syntax-->
+<script src="./js/logic/syntax/exceptions.js"></script>
+<script src="./js/logic/syntax/syntax.js"></script>
+
+<!--Logic: Parsing-->
+<script src="./js/logic/parsing/exceptions.js"></script>
+<script src="./js/logic/parsing/parsing.js"></script>
+<script src="./js/logic/parsing/types.js"></script>
+
+<!--Logic: Interpreting-->
+<script src="./js/logic/interpreting/exceptions.js"></script>
+<script src="./js/logic/interpreting/interpreting.js"></script>
+
+<!--Logic: Visualization-->
+<script src="./js/logic/visualization/tree.js"></script>
+
+<!--Logic: BASIC-->
+<script src="./js/logic/basic/language.js"></script>
+<script src="./js/logic/basic/parsing.js"></script>
+<script src="./js/logic/basic/interpreting.js"></script>
+
+<!--Presentation-->
+<script src="./js/presentation/main.js"></script>
+<script src="./js/services/display.js"></script>
+<script src="./js/services/exceptionService.js"></script>
+
+<script src="./js/controllers/main.js"></script>
+
+<link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+
+</head>
+
+<body data-ng-app="basicCompiler">
+    <div class="header">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-2">
+                    <!-- Logo -->
+                    <div class="logo" title="FunTimesInBASIC">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="" style="width: 100px; margin-top: 10px" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div>
+                        <ul class="nav nav-pills themed-pills" style="margin-top: 15px">
+                            <li role="presentation" class="active"><a href="./index.html"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                            <li role="presentation" class="active"><a href="./tests.html"><i class="fa fa-wrench"></i>&nbsp;Tests</a></li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <!--alerts-->
+        <div class="row" style="margin-bottom: 0px !important; margin-top: 20px !important">
+            <div class="col-md-12">
+                <div id="divAlerts">                    
+                </div>
+            </div>
+        </div>
+        <!--main body-->
+        <div class="row" style="margin-top: 10px !important">
+            <div class="col-md-12">
+
+<div class="container">
+    <div id="mocha"></div>
+
+    <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+    <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+    <script src="http://chaijs.com/chai.js" type="text/javascript"></script>
+    <script src="http://sinonjs.org/releases/sinon-1.17.5.js" type="text/javascript"></script>
+    
+    <script>mocha.setup('bdd')</script>
+
+    <!--TESTS TO RUN-->
+	<!--Tests: structures-->
+	<script src="./js/tests/structures/tree.js"></script>
+
+	<!--Tests: grammar-->
+	<script src="./js/tests/grammar/terminal.js"></script>
+	<script src="./js/tests/grammar/nonterminal.js"></script>
+
+	<!--Tests: BASIC-->
+	<script src="./js/tests/basic/parsing.types.js"></script>
+	<script src="./js/tests/basic/parsing.parser.js"></script>
+
+	<!--Tests: Integration-->
+	<script src="./js/tests/integration/examples.js"></script>
+
+    <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+    </script>
+</div>
+				
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copy text-center">
+                Copyright 2016 <a href="#">CoolStoryBro</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Container for confirmation dialogs-->
+    <div class="modal fade" id="divConfirmationDialog" tabindex="-1" role="dialog" aria-hidden="true">
+    </div>
+
+</body>
+</html>
